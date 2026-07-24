@@ -59,4 +59,4 @@ Two examples are included on purpose â€” a `Success` case and a `Failure` case â
 
 ## Context
 
-Done as part of annotation work for AI training data platforms (e.g. Mercor, Encord), focused on Vision-Language-Action model datasets. Object descriptions in the public examples are generalized to avoid publishing exact task content that may be covered under a contractor agreement.
+Done as part of annotation work, focused on Vision-Language-Action model datasets. Object descriptions in the public examples are generalized to avoid publishing exact task content that may be covered under a contractor agreement.
