@@ -1,0 +1,17 @@
+{
+  "video_id": "sample-002",
+  "intent": "Move the arm to a stacked pair of blocks, pick up the top block, and place it inside a nearby container.",
+  "subtasks_summary": [
+    "Move the arm toward the stack of two blocks on the right side of the table",
+    "Lower the arm above the top block",
+    "Close the gripper around the top block",
+    "Lift the block off the stack",
+    "Move the block toward the container on the left side of the table",
+    "Lower the block above the container opening",
+    "Open the gripper to release the block",
+    "Raise the arm back to a resting position"
+  ],
+  "final_summary": "The arm approached the stacked blocks, grasped the top block, lifted it, and moved it toward the container. On release, the block struck the rim of the container and landed just outside it rather than inside. The arm still returned to its resting position, but the placement goal was not achieved.",
+  "outcome": "Failure",
+  "outcome_rationale": "The block visibly makes contact with the outer rim of the container on release and comes to rest on the table surface beside the container rather than inside it, so the placement portion of the task was not completed even though the grasp and transport steps succeeded."
+}
