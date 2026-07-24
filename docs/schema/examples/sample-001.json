@@ -1,0 +1,18 @@
+{
+  "video_id": "sample-001",
+  "intent": "Move the arm from a dim area of the workspace to a lit area, pick up a target object, and set it down nearby.",
+  "subtasks_summary": [
+    "Lift the arm away from an object in the dimmer left side of the scene",
+    "Move the arm toward the brightly lit area of the table",
+    "Lower the arm above the target object next to a reference object",
+    "Close the gripper around the target object",
+    "Lift the object off the table surface",
+    "Move the object a short distance to the side",
+    "Lower the object back down near the reference object",
+    "Open the gripper to release the object",
+    "Raise the arm back to a resting position above the table"
+  ],
+  "final_summary": "The arm started in the dimmer part of the scene, moved across to the brightly lit area, located the target object next to the reference object, picked it up, repositioned it nearby, released it, and returned to a resting position. The task was completed as intended.",
+  "outcome": "Success",
+  "outcome_rationale": "The arm successfully traveled across the workspace, grasped the target object without dropping it, repositioned it, and released it cleanly without disturbing surrounding objects, fully completing the intended pick-and-place task."
+}
