@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Robot Task Annotation",
+  "description": "Schema for a structured robot arm manipulation task annotation used in VLA (Vision-Language-Action) model training data.",
+  "type": "object",
+  "required": ["intent", "subtasks_summary", "final_summary", "outcome", "outcome_rationale"],
+  "properties": {
+    "video_id": {
+      "type": "string",
+      "description": "Identifier for the source video (omitted or anonymized in public examples)."
+    },
+    "intent": {
+      "type": "string",
+      "description": "One to two sentences describing the overall goal of the arm's movement, first-person voice.",
+      "minLength": 10
+    },
+    "subtasks_summary": {
+      "type": "array",
+      "description": "Ordered list of atomic, first-person motion steps.",
+      "items": { "type": "string" },
+      "minItems": 4
+    },
+    "final_summary": {
+      "type": "string",
+      "description": "Standalone narrative paragraph recapping the task from start to end state.",
+      "minLength": 20
+    },
+    "outcome": {
+      "type": "string",
+      "enum": ["Success", "Failure", "Partial"]
+    },
+    "outcome_rationale": {
+      "type": "string",
+      "description": "Justification for the outcome label, referencing specific visual evidence rather than restating the label.",
+      "minLength": 15
+    }
+  }
+}
